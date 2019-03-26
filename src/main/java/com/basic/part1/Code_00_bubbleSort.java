@@ -10,10 +10,26 @@ package com.basic.part1;/*
 public class Code_00_bubbleSort {
     public static void main(String[] args) {
         int [] array = new int[]{9,8,7,6,5,4,1,2,3};
-        bubbleSort(array);
+        //bubbleSort(array);
+        sort2(array);
         for (int i = 0; i <array.length ; i++) {
             System.out.print("  "+array[i]);
         }
+    }
+    //改进  原理记录最后一位冒泡交换的下标，
+    public static void sort2(int[] array){
+        int m=array.length;
+        while (m > 1) {
+            int lastExchangeIndex = 1;
+            for (int j = 0; j < array.length-1; j++) {
+                if (array[j] > array[j + 1]) {
+                    swap(array, j, j + 1);
+                    lastExchangeIndex = j;
+                }else {
+                    m = lastExchangeIndex;  //只要最后一位交换的下标不是0，就一直循环
+                }
+            } // forj
+        } //while
     }
     //冒泡排序
     public static void bubbleSort(int[] array){
@@ -21,7 +37,7 @@ public class Code_00_bubbleSort {
         if (array == null||array.length<2) {
             return;
         }
-        for (int end = array.length-1; end>0  ; end--) { //循环次数 一共循环n次 下一次n-1次 n-2次
+        for (int end = array.length-1; end>0  ; end--) { //循环次数 一共循环n-1次
             for (int i = 0; i <end ; i++) {  //每次都是从0开始
                 if (array[i]>array[i+1]){
                     swap(array,i,i+1);}

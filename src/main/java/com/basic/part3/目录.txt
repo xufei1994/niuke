@@ -1,0 +1,33 @@
+算法目录
+
+
+part3
+
+com.basic.part3.Question_01_queue         -------------------------用数组结构实现大小固定的队列  栈
+
+com.basic.part3.Question_01_spectial_stack-------------------------实现一个特殊的栈，在实现栈的基本功能的基础上，再实现返回栈中最小元素的操作
+
+com.basic.part3.Question_03_queue         -------------------------用栈实现队列  队列实现栈
+
+com.basic.part3.Question_05_print         -------------------------转圈打印矩阵
+
+com.basic.part3.Question_06_rotate        -------------------------将一个正方形旋转90°
+
+com.basic.part3.Question_08_zhiPrint      -------------------------之字形打印
+
+com.basic.part3.Question_09_findNumber     ------------------------在行，列都排好的矩阵中找数
+
+com.basic.part3.Question_10_printQue      -------------------------打印两个有序链表的公共部分
+
+com.basic.part3.Question_11_huiwen        -------------------------判断一个链表是否是回文
+
+com.basic.part3.Question_12_Node          -------------------------链表荷兰问题将单向链表按某值划分为，左边小的，中间相等的，右边大的形式
+
+com.basic.part3.Question_13_CopyRandomLinkedlist-------------------复杂链表的复制
+
+com.basic.part3.Question_14                     -------------------判断两个链表是否相交
+
+com.basic.part3.Test                            -------------------一个先增后减的有序数组，有N个不同的数，找一个数
+
+
+                                                                                                                                                                时间复杂度O(N^2)， 额外空间复杂度O(1)
