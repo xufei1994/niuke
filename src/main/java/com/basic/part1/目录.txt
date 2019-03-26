@@ -1,0 +1,84 @@
+算法目录
+
+剖析递归行为和递归行为时间复杂度的估算
+一个递归行为的例子
+master公式的使用
+T(N) = a*T(N/b) + O(N^d)
+1) log(b,a) > d -> 复杂度为O(N^log(b,a))
+2) log(b,a) = d -> 复杂度为O(N^d * logN)
+3) log(b,a) < d -> 复杂度为O(N^d)
+
+
+part1
+
+com.basic.part1.Code_00_bubbleSort-------------------------冒泡排序细节的讲解与复杂度分析 时间复杂度O(N^2)， 额外空间复杂度O(1)
+
+com.basic.part1.Code_01_insertSort-------------------------插入排序的细节讲解与复杂度分析 时间复杂度O(N^2)， 额外空间复杂度O(1)
+
+com.basic.part1.Code_02_selectSort-------------------------选择排序的细节讲解与复杂度分析 时间复杂度O(N^2)， 额外空间复杂度O(1)
+
+com.basic.part1.Code_03_heapSort---------------------------堆排序细节的讲解与复杂度分析
+
+com.basic.part1.Code_04_quickSort--------------------------快速排序排序细节的讲解与复杂度分析
+
+com.basic.part1.Code_05_mergeSort--------------------------归并排序的细节讲解与复杂度分析 时间复杂度O(N*logN)， 额外空间复杂度O(N)
+
+com.basic.part1.Code_07_radixSort------------------------- 基数排序细节的讲解与复杂度分析 分配式排序  其时间复杂度为O (nlog(r)m) 其中r为所采取的基数，而m为堆数
+
+com.basic.part1.homework2         ------------------------- 末尾0的个数 输入一个正整数n,求n!(即阶乘)末尾有多少个0？ 比如: n = 10; n! = 3628800,所以答案为2
+
+com.basic.part1.homework1          ------------------------- 给定一个十进制数M，以及需要转换的进制数N。将十进制数M转化为N进制数
+
+com.basic.part1.Test01             -------------------------在一个数组中找最大值  递归实现
+
+com.basic.part1.Test02             -------------------------小和问题
+
+com.basic.part1.Test03             -------------------------逆序对问题
+
+com.basic.part1.Test04             -------------------------给定一个数组arr,和一个数num，请把小于等于num的数放在数组的左边，大于num的数放在数组的右边
+
+com.basic.part1.Test05             -------------------------其他数都出现K次中找只出现一次的数
+
+
+part2
+
+
+com.basic.part2.Question8          -------------------------给定一个数组，求如果排序之后，相邻两数的最大差值，要求时间复杂度O（N） ，且要求用基于比较的排序
+
+com.basic.part2.Test02             -------------------------荷兰国旗问题
+
+com.basic.part2.ReverseList        -------------------------链表反转
+
+com.basic.part2.StringSort             ---------------------比较两个字符串大小规则如下：
+                                                            * 1.如果两个字符串长度不相同，则短字符串比长字符串小
+                                                            * 2.如果两个字符串长度相同，则按照A~ Z,a~z,0~9的大小关系排序
+
+
+part3
+
+
+com.basic.part3.Question_01_queue         -------------------用数组结构实现大小固定的队列  栈
+
+com.basic.part3.Question_01_spectial_stack------------------- 实现一个特殊的栈，在实现栈的基本功能的基础上，再实现返回栈中最小元素的操作
+
+com.basic.part3.Question_03_queue         --------------------用栈实现队列  队列实现栈
+
+com.basic.part3.Question_05_print         --------------------转圈打印矩阵
+
+com.basic.part3.Question_06_rotate        -------------------- 将一个正方形旋转90°
+
+com.basic.part3.Question_08_zhiPrint      ---------------------之字形打印
+
+com.basic.part3.Question_09_findNumber     --------------------在行，列都排好的矩阵中找数
+
+com.basic.part3.Question_10_printQue      ----------------------打印两个有序链表的公共部分
+
+com.basic.part3.Question_11_huiwen        ----------------------判断一个链表是否是回文
+
+com.basic.part3.Question_12_Node          -----------------------链表荷兰问题将单向链表按某值划分为，左边小的，中间相等的，右边大的形式
+
+com.basic.part3.Question_13_CopyRandomLinkedlist------------------复杂链表的复制
+
+com.basic.part3.Question_14                     ------------------判断两个链表是否相交
+
+com.basic.part3.Test                            ------------------一个先增后减的有序数组，有N个不同的数，找一个数
