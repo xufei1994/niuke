@@ -1,0 +1,21 @@
+基础班:
+选择题
+https://www.nowcoder.com/questionTerminal/77712071dedb40b78e104bacb2b4bad6
+
+https://www.nowcoder.com/questionTerminal/c77fa23d7af4429c872bed13688e5cfc
+
+https://www.nowcoder.com/questionTerminal/95b7c4e0482d4db3940e95e085fc1e83
+
+编程题
+https://www.nowcoder.com/questionTerminal/ac61207721a34b74b06597fe6eb67c52
+
+https://www.nowcoder.com/questionTerminal/6ffdd7e4197c403e88c6a8aa3e7a332a
+
+
+选择 快速 堆排序 不具有排序稳定性
+冒泡  插入  归并具有稳定性
+数字长度如果很长：会使用快速排序（基础类型）
+数字长度如果很长：会使用归并排序（自定义类型）
+
+数字长度如果很短：会是由插入排序  小于60 选择插入排序
+
