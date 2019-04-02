@@ -2,7 +2,7 @@ package com.basic.part4.teacher;
 
 import java.util.Stack;
 
-public class Code_01_PreInPosTraversal {
+public class  Code_01_PreInPosTraversal {
 
 	public static class Node {
 		public int value;
