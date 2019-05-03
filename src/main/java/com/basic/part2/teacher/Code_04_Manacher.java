@@ -1,5 +1,6 @@
 package com.basic.part2.teacher;
 
+//在一个字符串中找到最长的回文子串
 public class Code_04_Manacher {
 
 	public static char[] manacherString(String str) {

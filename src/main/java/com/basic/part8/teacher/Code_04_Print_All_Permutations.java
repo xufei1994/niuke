@@ -16,7 +16,7 @@ public class Code_04_Print_All_Permutations {
 		for (int j = i; j < chs.length; j++) {
 			swap(chs, i, j);
 			process1(chs, i + 1);
-			//swap(chs, i, j);
+			swap(chs, i, j);
 		}
 	}
 

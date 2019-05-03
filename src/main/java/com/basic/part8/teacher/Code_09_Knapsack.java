@@ -3,7 +3,8 @@ package com.basic.part8.teacher;
 public class Code_09_Knapsack {
 
 	public static int maxValue1(int[] c, int[] p, int bag) {
-		return process1(c, p, 0, 0, bag);
+		return process1(c, p, 0, 0, bag)
+				-p[p.length-1];
 	}
 
 	public static int process1(int[] weights, int[] values, int i, int alreadyweight, int bag) {
@@ -18,7 +19,7 @@ public class Code_09_Knapsack {
 				process1(weights, values, i + 1, alreadyweight, bag),
 				
 				values[i] + process1(weights, values, i + 1, alreadyweight + weights[i], bag));
-	}
+}
 
 	public static int maxValue2(int[] c, int[] p, int bag) {
 		int[][] dp = new int[c.length + 1][bag + 1];
