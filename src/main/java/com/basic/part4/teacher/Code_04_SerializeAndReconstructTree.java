@@ -1,5 +1,6 @@
 package com.basic.part4.teacher;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -31,6 +32,7 @@ public class Code_04_SerializeAndReconstructTree {
 		for (int i = 0; i != values.length; i++) {
 			queue.offer(values[i]);
 		}
+
 		return reconPreOrder(queue);
 	}
 

@@ -1,4 +1,4 @@
-package chapter_9_others;
+package com.basic.newbook.chapter_9_others;
 
 import java.util.Arrays;
 import java.util.Comparator;

@@ -19,23 +19,26 @@ public class Question02 {
     //中序遍历中，node的下一个节点叫做 它的后继节点  左根右的顺序
     private static TreeNode findNext(TreeNode root) {
         //一般情况
-        if (root.getLeftChild()!=null){
-            return root.getLeftChild();
-        }
-        if (root.getLeftChild()==null &&root.getRightChild()!=null){
-            return root.getRightChild();
-        }
-        if (root.getRightChild()==null&&root.getLeftChild()==null){
-            while (root.getParent()!=null){ //如果他是左子树的右子树，则返回根节点
-                if (root.getParent().getParent()==null){
-                    return root.getParent().getRightChild();
-                }
-                if (root.getParent()==root.getParent().getParent().getLeftChild()&&root.getParent()
-                        .getParent().getRightChild()!=null){return root.getParent().getParent().getRightChild();}
+      if (root==null) return null;
+      if (root.getRightChild()!=null){
+          return getLeftMost(root);
+      }else {
+          TreeNode parent = root.getParent();
+          while (parent!=null&&parent.getLeftChild()!=root){
+              root=parent;
+              parent=root.getParent();
+          }
+          return parent;
+      }
 
-            }
-        } //如果它是右子树的右子树  则返回 null
-      return root.getLeftChild();
+    }
+
+    private static TreeNode getLeftMost(TreeNode root) {
+        if (root==null) return root;
+        while (root.getLeftChild()!=null){
+            root=root.getLeftChild();
+        }
+        return root;
     }
 
 }

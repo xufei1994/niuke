@@ -28,4 +28,6 @@ public class 传送门 {
         System.out.println(dp[n+1]);//防止long溢出
     }
 
+
+
 }

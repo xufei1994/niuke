@@ -26,27 +26,30 @@ public class Question_05_print {
         for (int k = 0; k < maxEdge; k++) {//第几圈 0,1
             int i;
             for ( i = k; i < arr[0].length - k; i++) {
-                System.out.print("   → " + arr[k][i]);
+                System.out.print(" " + arr[k][i]);
             }
             i--;  //i=4 溢出
             int j=k+1; //越过重复项
             for (; j<arr.length-k ; j++) {
-                System.out.print("   → " + arr[j][i]);
+                System.out.print(" " + arr[j][i]);
             }
             j--;// j=4 溢出
             i--;  //越过重复项
             for ( ; i >=k ; i--) {
-                System.out.print("   → " + arr[j][i]);
+                System.out.print(" " + arr[j][i]);
             }
             i++;  //i=-1
             j--; //越过重复项
             for (; j >k ; j--) {
-                System.out.print("   → " + arr[j][i]);
+                System.out.print(" " + arr[j][i]);
             }
             System.out.println();
         }
 
     }
+
+
+
 
 
 }

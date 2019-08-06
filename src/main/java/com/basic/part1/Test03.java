@@ -10,20 +10,20 @@ package com.basic.part1;/*
 import java.util.Arrays;
 
 public class Test03 {
-
+    public static void main(String []args) throws InterruptedException {
+        int []arr = {9,8,7,6,5,4,3,2,1};
+        sort(arr);
+        System.out.println(Arrays.toString(arr));
+        System.out.println(ORDER_COUNT);
+        int [] arr2={2,1,5,3,2};
+        Thread.sleep(1000);
+        ORDER_COUNT=0;
+        sort(arr2);
+        System.out.println(Arrays.toString(arr2));
+        System.out.println(ORDER_COUNT);
+    }
         private static int ORDER_COUNT=0;
-        public static void main(String []args) throws InterruptedException {
-            int []arr = {9,8,7,6,5,4,3,2,1};
-            sort(arr);
-            System.out.println(Arrays.toString(arr));
-            System.out.println(ORDER_COUNT);
-            int [] arr2={2,1,5,3,2};
-            Thread.sleep(1000);
-            ORDER_COUNT=0;
-            sort(arr2);
-            System.out.println(Arrays.toString(arr2));
-            System.out.println(ORDER_COUNT);
-        }
+
         public static void sort(int []arr){
             int []temp = new int[arr.length];//在排序前，先建好一个长度等于原数组长度的临时数组，避免递归中频繁开辟空间
             mergeSort(arr,0,arr.length-1,temp);
